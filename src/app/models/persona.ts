@@ -9,13 +9,14 @@ Activo: boolean;
 };
 export const Personas:Persona[]=
 [
-
   {IdPersona:1,
-  Nombre:"Juan Pablo                                        ",FecNacimiento:"2020-12-12T00:00:00",
+  Nombre:"Juan Pablo                                        ",
+  FecNacimiento: "2020-12-12T00:00:00",
   Limite:345,
   Activo: true
   },
-  {IdPersona:2,Nombre:"Fernando                                          ",FecNacimiento:"2020-02-10T00:00:00",
+  {IdPersona:2,
+  Nombre:"Fernando                                          ",FecNacimiento:"2020-02-10T00:00:00",
   Limite:345,
   Activo: true
   },
@@ -130,7 +131,8 @@ export const Personas:Persona[]=
   Activo: true
   },
   {IdPersona:29,
-  Nombre:"Fabio Falcone                                     ",FecNacimiento:null,
+  Nombre:"Fabio Falcone                                     ",
+  FecNacimiento:null,
   Limite:3,
   Activo: true
   },

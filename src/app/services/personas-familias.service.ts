@@ -16,7 +16,9 @@ export class PersonasFamiliasService {
   constructor(private httpClient: HttpClient) {
     // la barra al final del resourse url es importante para los metodos que concatenan el id del recurso (GetById, Put)
    
-    //this.resourceUrl = "https://pav2.azurewebsites.net/api/personasfamilias";
+    // this.resourceUrl = "https://pav2.azurewebsites.net/api/personasfamilias";
+    this.resourceUrl = "https://pav2.azurewebsites.net/api/personas";
+
   }
 
   get() {

@@ -3,7 +3,7 @@ import { Persona } from "../../models/persona";
 
 import { PersonasService } from "../../services/pérsonas.service";
 import { MockPersonasService } from "../../services/mock-personas.service";
-import { PersonassFamiliasService } from "../../services/personas-familias.service";
+import { PersonasFamiliasService } from "../../services/personas-familias.service";
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { ModalDialogService } from "../../services/modal-dialog.service";
 
