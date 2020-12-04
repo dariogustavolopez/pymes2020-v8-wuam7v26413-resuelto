@@ -21,7 +21,7 @@ export class PersonasFamiliasComponent implements OnInit {
     this.GetFamiliasPersonas();
   }
  
-  GetFamiliass() {
+  GetFamiliasPersonas() {
     this.personasFamiliasService.get()
     .subscribe((res:PersonaFamilia[]) => {
       this.Items = res;
