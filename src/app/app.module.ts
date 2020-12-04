@@ -26,6 +26,7 @@ import { PersonasFamiliasService } from "./services/personas-familias.service";
 import { PersonasComponent } from "./components/personas/personas.component";
 
 import { ModalDialogComponent } from "./components/modal-dialog/modal-dialog.component";
+import { PersonasfamiliasComponent } from './components/personas-familias/personasfamilias/personasfamilias.component';
 
 
 @NgModule({
@@ -37,6 +38,7 @@ import { ModalDialogComponent } from "./components/modal-dialog/modal-dialog.com
     ArticulosFamiliasComponent,
     PersonasComponent,
     ModalDialogComponent,
+    PersonasfamiliasComponent,
   ],
   imports: [
     BrowserModule,
