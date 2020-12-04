@@ -18,9 +18,11 @@ import { MenuComponent } from "./components/menu/menu.component";
 import { InicioComponent } from "./components/inicio/inicio.component";
 import { ArticulosComponent } from "./components/articulos/articulos.component";
 import { ArticulosFamiliasComponent } from "./components/articulos-familias/articulos-familias.component";
+
 import { MockPersonasService } from './services/mock-personas.service';
 import { PersonasService } from "./services/personas.service";
 import { PersonasFamiliasService } from "./services/personas-familias.service";
+
 import { PersonasComponent } from "./components/personas/personas.component";
 
 import { ModalDialogComponent } from "./components/modal-dialog/modal-dialog.component";
