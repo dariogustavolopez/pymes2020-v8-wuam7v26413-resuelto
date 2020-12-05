@@ -24,9 +24,10 @@ import { PersonasService } from "./services/personas.service";
 import { PersonasFamiliasService } from "./services/personas-familias.service";
 
 import { PersonasComponent } from "./components/personas/personas.component";
-
+import { PersonasFamiliasComponent } from './components/personas-familias/personasfamilias.component';
 import { ModalDialogComponent } from "./components/modal-dialog/modal-dialog.component";
-import { PersonasfamiliasComponent } from './components/personas-familias/personasfamilias/personasfamilias.component';
+import { MockPersonasFamiliasService } from './services/mock-personas-familias.service';
+
 
 
 @NgModule({
@@ -57,7 +58,7 @@ import { PersonasfamiliasComponent } from './components/personas-familias/person
   entryComponents: [ModalDialogComponent],
   providers: [
      {provide: APP_BASE_HREF, useValue : '/' },
-    { provide: HTTP_INTERCEPTORS, useClass: MyInterceptor, multi: true, providers1: [MockPersonasService], providers2: [PersonasService], providers3: [PersonasFamiliasService] }
+    { provide: HTTP_INTERCEPTORS, useClass: MyInterceptor, multi: true, providers1: [MockPersonasService], providers2: [PersonasService], providers3: [PersonasFamiliasService], providers: [MockPersonasFamiliasService] }
   ],
   bootstrap: [AppComponent]
 })
