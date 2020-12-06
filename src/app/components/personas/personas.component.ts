@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { Persona } from "../../models/persona";
 import { PersonaFamilia } from "../../models/persona-familia";
-import {MockPersonasServices } from "../../services/mock-personas.service";
+import {MockPersonasServices} from "../../services/mock-personas.service";
 import { MockPersonasFamiliasService } from "../../services/mock-personas-familias.service";
 import { PersonasService } from "../../services/personas.service";
 import { PersonasFamiliasService } from "../../services/personas-familias.service";
