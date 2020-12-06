@@ -24,7 +24,7 @@ import { PersonasService } from "./services/personas.service";
 import { PersonasFamiliasService } from "./services/personas-familias.service";
 
 import { PersonasComponent } from "./components/personas/personas.component";
-import { PersonasFamiliasComponent } from './components/personas-familias/personasfamilias.component';
+import { PersonasFamiliasComponent } from './components/personas-familias/personas-familias.component';
 import { ModalDialogComponent } from "./components/modal-dialog/modal-dialog.component";
 import { MockPersonasFamiliasService } from './services/mock-personas-familias.service';
 
@@ -39,7 +39,7 @@ import { MockPersonasFamiliasService } from './services/mock-personas-familias.s
     ArticulosFamiliasComponent,
     PersonasComponent,
     ModalDialogComponent,
-    PersonasfamiliasComponent,
+    PersonasamiliasComponent
   ],
   imports: [
     BrowserModule,
