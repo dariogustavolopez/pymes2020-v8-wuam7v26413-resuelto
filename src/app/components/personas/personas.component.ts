@@ -1,9 +1,10 @@
 import { Component, OnInit } from "@angular/core";
 import { Persona } from "../../models/persona";
-
-//import { PersonasService } from "../../services/pérsonas.service";
-//import { MockPersonasService } from "../../services/mock-personas.service";
-//import { PersonasFamiliasService } from "../../services/personas-familias.service";
+import { PersonaFamilia } from "../../models/persona-familia";
+import {MockPersonasServices } from "../../services/mock-personas.service";
+import { MockPersonasFamiliasService } from "../../services/mock-personas-familias.service";
+import { PersonasService } from "../../services/personas.service";
+import { PersonasFamiliasService } from "../../services/personas-familias.service";
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { ModalDialogService } from "../../services/modal-dialog.service";
 
@@ -29,6 +30,7 @@ export class PersonasComponent implements OnInit {
 
   Lista: Persona[] = [];
   RegistrosTotal: number;
+  Familias: PersonaFamilia[] = [];
   SinBusquedasRealizadas = true;
 
   Pagina = 1; // inicia pagina 1
@@ -46,9 +48,10 @@ export class PersonasComponent implements OnInit {
 
   constructor(
     public formBuilder: FormBuilder,
-    //private articulosService: MockArticulosService,
-    //private articulosFamiliasService: MockArticulosFamiliasService,
+    //private personasService: MockPersonasService,
+    //private personasFamiliasService: MockPersonasFamiliasService,
     private personasService:PersonasService,
+    private personasFamiliasService: PersonasFamiliasService,
     private modalDialogService: ModalDialogService
   ) {}
 
