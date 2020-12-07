@@ -58,11 +58,11 @@ import { MockPersonasFamiliasService } from './services/mock-personas-familias.s
   entryComponents: [ModalDialogComponent],
   providers: [
      {provide: APP_BASE_HREF, useValue : '/' },
-    { provide: HTTP_INTERCEPTORS, useClass: MyInterceptor, multi: true, 
-    providers1: [MockPersonasService], 
-    providers2: [PersonasService], 
-    providers3: [PersonasFamiliasService], 
-    providers: [MockPersonasFamiliasService] }
+     {provide: HTTP_INTERCEPTORS, useClass: MyInterceptor, multi: true,
+     providers1: [MockPersonasService],
+     providers2: [PersonasService],
+     providers3: [PersonasFamiliasService],
+     providers4: [MockPersonasFamiliasService], }
   ],
   bootstrap: [AppComponent]
 })
