@@ -59,9 +59,9 @@ import { MockPersonasFamiliasService } from './services/mock-personas-familias.s
   providers: [
      {provide: APP_BASE_HREF, useValue : '/' },
      {provide: HTTP_INTERCEPTORS, useClass: MyInterceptor, multi: true,
-     providers1: [MockPersonasService],
-     providers2: [PersonasService],
-     providers3: [PersonasFamiliasService],
+     //providers1: [MockPersonasService],
+     //providers2: [PersonasService],
+     //providers3: [PersonasFamiliasService],
      providers4: [MockPersonasFamiliasService], }
   ],
   bootstrap: [AppComponent]
